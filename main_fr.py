@@ -6,6 +6,7 @@
 
 import hashlib
 
+print("")
 print("Bienvenue dans ce générateur de mots de passe encryptés !")
 print("Vous aurez besoin d'un mot de passe qui remplit les conditions suivantes :")
 print("")
