@@ -6,6 +6,7 @@
 
 import hashlib
 
+print("")
 print("Welcome in this encrypted password generator!")
 print("You will need a password that meets the following requirements:")
 print("")
