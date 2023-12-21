@@ -6,6 +6,15 @@
 
 import hashlib
 
+print("Welcome in this encrypted password generator!")
+print("You will need a password that meets the following requirements:")
+print("")
+print("- at least one uppercase character")
+print("- at least one lowercase character")
+print("- at least one number")
+print("- at least one special character")
+print("- the password must be at least 8 characters in length")
+print("")
 print("Please enter a password:")
 
 #--------------------------------------------------------------------------------------------------#
@@ -56,7 +65,8 @@ def password_check():
             else:
                 Special = True
                 # Checks if there are any special characters in the string.
-            
+        
+        print("")
         print("Uppercase:", Upper)
         print("Lowercase:", Lower)
         print("Numbers:", Digit)
@@ -78,14 +88,17 @@ def password_check():
             
         if Upper == True and Lower == True and Digit == True and Special == True and Length == True:
         # If all requirements are successfully met...
+            print("")
             print("Password successfully generated!")
             # Print this message.
             hashed_string = hashlib.sha256(password.encode('UTF-8')).hexdigest()
             # Then generate a password using hashlib's SHA-256 encryption method.
+            print("")
             print(hashed_string)
             # And print it for the user to copy and paste anywhere they want.
             
         else:
+            print("")
             print("Try again:")
             password_check()
             # If at least one condition isn't met, prompt the user to try again and roll back to the start of the function until they succeed.
