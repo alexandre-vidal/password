@@ -6,6 +6,15 @@
 
 import hashlib
 
+print("Bienvenue dans ce générateur de mots de passe encryptés !")
+print("Vous aurez besoin d'un mot de passe qui remplit les conditions suivantes :")
+print("")
+print("- au moins un caractère en majuscule")
+print("- au moins un caractère en minuscule")
+print("- au moins un chiffre")
+print("- au moins un caractère spécial")
+print("- le mot de passe doit être d'une longueur d'au moins 8 caractères")
+print("")
 print("Veuillez insérer un mot de passe :")
 
 #--------------------------------------------------------------------------------------------------#
@@ -56,7 +65,8 @@ def password_check():
             else:
                 Special = True
                 # Vérifie s'il y a au moins un caractère spécial dans la chaîne.
-            
+        
+        print("")
         print("Majuscules :", Upper)
         print("Minuscules :", Lower)
         print("Chiffres :", Digit)
@@ -78,14 +88,17 @@ def password_check():
             
         if Upper == True and Lower == True and Digit == True and Special == True and Length == True:
         # Si toutes les conditions sont remplies avec succès...
+            print("")
             print("Mot de passe généré avec succès !")
             # Imprimer ce message.
             hashed_string = hashlib.sha256(password.encode('UTF-8')).hexdigest()
             # Puis générer un mot de passe avec la méthode d'encryption SHA-256 du module Hashlib.
+            print("")
             print(hashed_string)
             # Et l'imprimer pour que l'utilisateur puisse le copier-coller où il le souhaite.
             
         else:
+            print("")
             print("Veuillez réessayer :")
             password_check()
             # Si au moins une des conditions n'est pas remplie, inviter l'utilisateur à réessayer et retourner au début de la fonction.
