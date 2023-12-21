@@ -1,6 +1,4 @@
-#----------------------------------------------------------------------------------------------------------------------------------#
 #                                                             ENGLISH                                                              #
-#----------------------------------------------------------------------------------------------------------------------------------#
 
 This is a password generator I've coded from scratch, using the hashlib module's SHA-256 encryption method.
 It also gives feedback on the user's password using different simple check methods, and prompts them to try improving it until it meets the following requirements:
@@ -19,13 +17,7 @@ This repository contains:
 - main_fr.py (the same password generator file, in French)
 - secrets_strings.py (an alternative, albeit unfinished password generator, also written in Python 3, that makes use of the secrets and string modules to randomly generate a password based on a number given by the user to define its length)
 
-
-
-
-
-#----------------------------------------------------------------------------------------------------------------------------------#
 #                                                             FRANÇAIS                                                             #
-#----------------------------------------------------------------------------------------------------------------------------------#
 
 Ceci est un générateur de mot de passe que j'ai codé en partant de zéro, utilisant la méthode d'encryption SHA-256 du module hashlib.
 Il fait également des retours sur le mot de passe de l'utilisateur en utilisant des méthodes de vérification simples, et les invite à l'améliorer jusqu'à ce qu'il corresponde aux critères suivants :
