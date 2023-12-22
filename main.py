@@ -1,22 +1,11 @@
 #--------------------------------------------------------------------------------------------------#
 #                                       WORKING CODE BELOW                                         #
 #--------------------------------------------------------------------------------------------------#
-#                                             Module                                               #
+#                                             Modules                                              #
 #--------------------------------------------------------------------------------------------------#
 
 import hashlib
-
-print("")
-print("Welcome in this encrypted password generator!")
-print("You will need a password that meets the following requirements:")
-print("")
-print("- at least one uppercase character")
-print("- at least one lowercase character")
-print("- at least one number")
-print("- at least one special character")
-print("- the password must be at least 8 characters in length")
-print("")
-print("Please enter a password:")
+import sys
 
 #--------------------------------------------------------------------------------------------------#
 #                                           Functions                                              #
@@ -33,6 +22,18 @@ def password_input():
 #--------------------------------------------------------------------------------------------------#
 
 def password_check(): 
+        
+        print("")
+        print("Welcome in this encrypted password generator!")
+        print("You will need a password that meets the following requirements:")
+        print("")
+        print("- at least one uppercase character")
+        print("- at least one lowercase character")
+        print("- at least one number")
+        print("- at least one special character")
+        print("- the password must be at least 8 characters in length")
+        print("")
+        print("Please enter a password:")
         
         password = password_input()
         # Calls the previous function and defining a variable that'll be used repeatedly throughout the entire function.
@@ -97,6 +98,17 @@ def password_check():
             print("")
             print(hashed_string)
             # And print it for the user to copy and paste anywhere they want.
+
+            print("")
+            print('Press enter to close the program, or type "again" to run it once more:')
+            close = input()
+
+            if close == str("again"):
+                password_check()
+            
+            else:
+                sys.exit()
+            # Useful to prevent Python's window from closing without the user's consent.
             
         else:
             print("")
