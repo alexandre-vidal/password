@@ -1,22 +1,11 @@
 #--------------------------------------------------------------------------------------------------#
 #                                  CODE FONCTIONNEL CI-DESSOUS                                     #
 #--------------------------------------------------------------------------------------------------#
-#                                             Module                                               #
+#                                             Modules                                              #
 #--------------------------------------------------------------------------------------------------#
 
 import hashlib
-
-print("")
-print("Bienvenue dans ce générateur de mots de passe encryptés !")
-print("Vous aurez besoin d'un mot de passe qui remplit les conditions suivantes :")
-print("")
-print("- au moins un caractère en majuscule")
-print("- au moins un caractère en minuscule")
-print("- au moins un chiffre")
-print("- au moins un caractère spécial")
-print("- le mot de passe doit être d'une longueur d'au moins 8 caractères")
-print("")
-print("Veuillez insérer un mot de passe :")
+import sys
 
 #--------------------------------------------------------------------------------------------------#
 #                                           Fonctions                                              #
@@ -33,6 +22,18 @@ def password_input():
 #--------------------------------------------------------------------------------------------------#
 
 def password_check(): 
+        
+        print("")
+        print("Bienvenue dans ce générateur de mots de passe encryptés !")
+        print("Vous aurez besoin d'un mot de passe qui remplit les conditions suivantes :")
+        print("")
+        print("- au moins un caractère en majuscule")
+        print("- au moins un caractère en minuscule")
+        print("- au moins un chiffre")
+        print("- au moins un caractère spécial")
+        print("- le mot de passe doit être d'une longueur d'au moins 8 caractères")
+        print("")
+        print("Veuillez insérer un mot de passe :")
         
         password = password_input()
         # Appelle la fionction précédente et définit une variable qui sera utilisée à plusieurs reprise tout au long de la fonction.
@@ -97,6 +98,17 @@ def password_check():
             print("")
             print(hashed_string)
             # Et l'imprimer pour que l'utilisateur puisse le copier-coller où il le souhaite.
+
+            print("")
+            print('Appuyez sur entrée pour quitter le programme, ou tapez "encore" pour relancer le programme :')
+            close = input()
+
+            if close == str("encore"):
+                password_check()
+            
+            else:
+                sys.exit()
+            # Utile pour empêcher la fermeture de la fenêtre de Python sans l'accord de l'utilisateur.
             
         else:
             print("")
