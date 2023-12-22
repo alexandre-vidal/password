@@ -98,6 +98,11 @@ def password_check():
             print("")
             print(hashed_string)
             # Et l'imprimer pour que l'utilisateur puisse le copier-coller où il le souhaite.
+            
+            with open('saved_passwords.txt', 'a') as o:
+                o.write(password + "\n")
+                o.write(hashed_string + "\n" + "\n")
+            # Sauvegarde les mots de passe dans un fichier texte.
 
             print("")
             print('Appuyez sur entrée pour quitter le programme, ou tapez "encore" pour relancer le programme :')
