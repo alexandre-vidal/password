@@ -9,7 +9,7 @@ It also gives feedback on the user's password using different simple check metho
 - at least one special character
 - the password's length must be equal or greater than 8 characters
 
-If all requirements are met, then a password will be generated for the user to copy and paste anywhere they please.
+If all requirements are met, then a password will be generated for the user to copy and paste anywhere they please. It will also be saved to an external txt file named "saved_passwords.txt".
 Otherwise, they will be prompted to try again.
 
 This repository contains:
@@ -28,7 +28,7 @@ Il fait également des retours sur le mot de passe de l'utilisateur en utilisant
 - au moins un caractère spécial
 - la longueur du mot de passe doit être égale ou supérieure à 8 caractères
 
-Si tous les critères sont remplis, un mot de passe sera généré pour que l'utilisateur puisse le copier partout où il le souhaite.
+Si tous les critères sont remplis, un mot de passe sera généré pour que l'utilisateur puisse le copier partout où il le souhaite. Il sera également sauvegardé dans un fichier nommé "saved_passwords.txt".
 Autrement, le programme demandera à l'utilisateur de réessayer.
 
 Ce dépôt contient :
