@@ -2,3 +2,7 @@
 .vscode/
 
 __pycache__/
+
+saved_passwords.txt
+
+save_to_txt.py
