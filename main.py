@@ -20,18 +20,19 @@ def password_input():
 #--------------------------------------------------------------------------------------------------#
 #                                  Function no. 2: Password check                                  #
 #--------------------------------------------------------------------------------------------------#
+     
+print("")
+print("Welcome in this encrypted password generator!")
+print("You will need a password that meets the following requirements:")
+print("")
+print("- at least one uppercase character")
+print("- at least one lowercase character")
+print("- at least one number")
+print("- at least one special character")
+print("- the password must be at least 8 characters in length")
 
 def password_check(): 
-        
-        print("")
-        print("Welcome in this encrypted password generator!")
-        print("You will need a password that meets the following requirements:")
-        print("")
-        print("- at least one uppercase character")
-        print("- at least one lowercase character")
-        print("- at least one number")
-        print("- at least one special character")
-        print("- the password must be at least 8 characters in length")
+    
         print("")
         print("Please enter a password:")
         
