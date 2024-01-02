@@ -21,17 +21,20 @@ def password_input():
 #                            Fonction no. 2: Vérification du mot de passe                          #
 #--------------------------------------------------------------------------------------------------#
 
-def password_check(): 
+
         
-        print("")
-        print("Bienvenue dans ce générateur de mots de passe encryptés !")
-        print("Vous aurez besoin d'un mot de passe qui remplit les conditions suivantes :")
-        print("")
-        print("- au moins un caractère en majuscule")
-        print("- au moins un caractère en minuscule")
-        print("- au moins un chiffre")
-        print("- au moins un caractère spécial")
-        print("- le mot de passe doit être d'une longueur d'au moins 8 caractères")
+print("")
+print("Bienvenue dans ce générateur de mots de passe encryptés !")
+print("Vous aurez besoin d'un mot de passe qui remplit les conditions suivantes :")
+print("")
+print("- au moins un caractère en majuscule")
+print("- au moins un caractère en minuscule")
+print("- au moins un chiffre")
+print("- au moins un caractère spécial")
+print("- le mot de passe doit être d'une longueur d'au moins 8 caractères")
+
+def password_check(): 
+    
         print("")
         print("Veuillez insérer un mot de passe :")
         
